@@ -16,3 +16,19 @@ var saveBtn = $('.saveBtn')
 var deleteBtn = $('.delete')
 var currenthour= moment().hour()
 console.log(currenthour)
+
+function initialize(){
+    currentDay.text(moment().format('dddd, MMMM Do'))
+    for (let index = 0; index < hours.length; index++) {
+        // Colors past/present/future based on system clock
+        if (currentHour > hours[index]){
+            $('#' + hours[index]).addClass('past')
+        }else if (currentHour == hours[index]){
+            $('#' + hours[index]).addClass('present')
+        }else if (currentHour < hours[index]){
+            $('#' + hours[index]).addClass('future')
+        }
+        // Populates textboxes with any locally stored inputs
+        $('#' + hours[index]).text(local[index])
+    }
+ }  
