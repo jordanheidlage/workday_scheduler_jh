@@ -1,4 +1,4 @@
-var currentHour = moment().format("dddd, MMMM Do");
+var currentHour = moment().format("dddd, MMMM Do YYYY");
 var currentDay = $("#currentDay");
 var btn9 = document.getElementById("9");
 var btn10 = document.getElementById("10");
@@ -19,7 +19,7 @@ var ifElse
 console.log(currenthour)
 
 function initialize(){
-    currentDay.text(moment().format('dddd, MMMM Do'))
+    currentDay.text(moment().format('dddd, MMMM Do YYYY'))
     for (let index = 0; index < hours.length; index++) {
         // Colors past/present/future based on system clock
         if (currentHour > hours[index]){
