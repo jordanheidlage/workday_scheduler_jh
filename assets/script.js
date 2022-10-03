@@ -1,22 +1,7 @@
 var currentHour = moment().format("dddd, MMMM Do YYYY");
 var currentDay = $("#currentDay");
-var btn9 = document.getElementById("9");
-var btn10 = document.getElementById("10");
-var btn11 = document.getElementById("11");
-var btn12 = document.getElementById("12");
-var btn1 = document.getElementById("13");
-var btn2 = document.getElementById("14");
-var btn3 = document.getElementById("15");
-var btn4 = document.getElementById("16");
-var btn5 = document.getElementById("17");
-var timeBlocksArr=[9,10,11,12,13,14,15,16,17] 
-
-
-var saveBtn = $('.saveBtn')
-var deleteBtn = $('.delete')
 var currenthour= moment().hour()
-var ifElse
-console.log(currenthour)
+
 
 function initialize(){
     currentDay.text(moment().format('dddd, MMMM Do YYYY'))
