@@ -14,6 +14,8 @@ This is a planner that utilizes local storage to allow the user to save, or dele
 
 When you open the page, you will see a text box available for the hours of 9am-5pm. You can click into this text box, and enter anything you'd like, and hit the "save" button at the bottom. If you refresh the page, this entry will still be saved into your local storage. To delete any text entries, click the "Reset All" button, and all data will be removed. Deployed page can be accessed here:
 
+https://jordanheidlage.github.io/workday_scheduler_jh/
+
 
 
 ![Website Preview](./assets/scheduler.png)
